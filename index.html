@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sarah Almanjahi | Portfolio</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Sarah Almanjahi</h1>
+
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+
+      <p class="tagline">
+        Software Engineering Student | Building practical solutions
+        through technology.
+      </p>
+
+      <p id="greeting"></p>
+
+      <p>
+        I am a Software Engineering student at KFUPM with an interest
+        in web development and building practical software solutions.
+        I enjoy learning new technologies and applying them through
+        academic and personal projects.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- Project Filter Buttons -->
+      <div class="project-filters" aria-label="Filter projects">
+        <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">
+          All
+        </button>
+
+        <button type="button" class="filter-btn" data-filter="development" aria-pressed="false">
+          Development
+        </button>
+
+        <button type="button" class="filter-btn" data-filter="design" aria-pressed="false">
+          Design
+        </button>
+      </div>
+
+      <div id="projects-list">
+        <article data-category="development">
+          <img
+            src="assets/images/javafx-game.jpg"
+            alt="JavaFX Game project"
+            loading="lazy"
+          >
+
+          <h3>JavaFX Game</h3>
+
+          <p>
+            A Java desktop game developed using JavaFX.
+            The project helped me practice object-oriented programming,
+            user interface design, and event handling.
+          </p>
+        </article>
+
+        <article data-category="design">
+          <img
+            src="assets/images/queue-system.png"
+            alt="Smart Queue Management System project"
+            loading="lazy"
+          >
+
+          <h3>Smart Queue Management System</h3>
+
+          <p>
+            A smart queue management system designed to improve the
+            waiting experience and organize customer flow more
+            efficiently. The project focused on user needs,
+            system design, and creating a clear and user-friendly
+            interface.
+          </p>
+        </article>
+      </div>
+      <p id="projects-empty" role="status" hidden>
+            No projects found in this category.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <form id="contact-form" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+        <!-- Validation Feedback -->
+        <p id="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sarah Almanjahi</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
