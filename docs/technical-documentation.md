@@ -1,80 +1,159 @@
 # Technical Documentation
 
-## Project Overview
+**SWE 363 – Assignment 2: Interactive Features**
 
-This project is a responsive personal portfolio website developed for SWE 363 Assignment 1.
+**Student:** Sarah Almanjahi  
+**Project:** Personal Portfolio Website
 
-The website includes an About Me section, a Projects section, and a Contact section.
+## 1. Introduction
 
-## Project Structure
+This document explains the technical implementation of the interactive features added to my personal portfolio website for Assignment 2.
 
-The project is organized into separate files and folders:
+The website was developed using HTML, CSS, and vanilla JavaScript. Assignment 2 extends the original portfolio by adding project filtering, contact form validation, animations, and user feedback.
 
-- `index.html` → contains the main structure and content of the website.
-- `css/styles.css` → contains the visual design and responsive styling.
-- `js/script.js` → contains the JavaScript functionality.
-- `assets/images/` → stores images used in the website.
-- `docs/` → contains project documentation.
+## 2. Technologies Used
 
-## HTML Structure
+| Technology | Purpose |
+|---|---|
+| HTML5 | Defines the website structure and content |
+| CSS3 | Provides styling, animations, and responsive layouts |
+| JavaScript | Handles user interactions and dynamic content |
+| Git and GitHub | Tracks changes and manages project versions |
 
-The website uses semantic HTML elements such as:
+No external JavaScript frameworks or backend services are required.
 
-- `<header>`
-- `<nav>`
-- `<main>`
-- `<section>`
-- `<article>`
-- `<footer>`
+## 3. Website Structure
 
-These elements help organize the content clearly and improve readability.
+The website contains three main sections:
 
-## CSS Design
+- **About Me:** Personal introduction and dynamic greeting.
+- **Projects:** Academic project cards and category filtering.
+- **Contact:** Contact form with client-side validation.
 
-CSS is used to control:
+The HTML structure is defined in `index.html`, styling is managed in `css/styles.css`, and interactive functionality is implemented in `js/script.js`.
 
-- Colors
-- Spacing
-- Typography
-- Layout
-- Responsive design
+## 4. JavaScript Implementation
 
-Flexbox is used for the navigation bar and contact form.
+### 4.1 Dynamic Greeting
 
-CSS Grid is used to display project cards.
+The greeting feature uses the JavaScript `Date` object to retrieve the visitor's current hour.
 
-A media query is used to adjust the layout for smaller screens.
+The displayed message changes according to the time:
 
-## JavaScript Functionality
+- Before 12:00 PM: Good morning
+- From 12:00 PM to 5:59 PM: Good afternoon
+- From 6:00 PM onward: Good evening
 
-JavaScript is used to display a greeting message based on the current time of day.
+The result is displayed using the `textContent` property.
 
-The script gets the current hour using:
+### 4.2 Interactive Project Filtering
 
-`new Date().getHours()`
+The project filtering feature allows visitors to display projects based on their categories.
 
-It then displays one of the following messages:
+Three filter buttons are provided: All, Development, and Design.
 
-- Good morning
-- Good afternoon
-- Good evening
+**Implementation:**
 
-## Responsive Design
+1. JavaScript selects the filter buttons and project cards using `querySelectorAll()`.
+2. An event listener detects when a filter button is clicked.
+3. The selected category is retrieved using `dataset.filter`.
+4. Each project's `data-category` attribute is compared with the selected category.
+5. Matching projects are displayed, while nonmatching projects are hidden using the `hidden` property.
+6. The selected button's `aria-pressed` attribute is updated to provide visual and accessibility feedback.
 
-The website is designed to work on:
+An empty-state message is also included for situations where no projects match the selected category.
 
-- Desktop
-- Tablet
-- Mobile
+### 4.3 Contact Form Validation
 
-The layout changes when the screen width becomes smaller to make the content easier to read.
+The contact form collects three inputs: name, email address, and message.
 
-## Testing
+JavaScript uses a submit event listener to process user input.
 
-The website was tested by:
+**Validation process:**
 
-- Opening it in a web browser.
-- Resizing the browser window.
-- Checking the navigation links.
-- Checking the contact form layout.
-- Verifying that the JavaScript greeting appears correctly.
+1. `event.preventDefault()` prevents the default form submission.
+2. Input values are retrieved from the form fields.
+3. The `trim()` method removes unnecessary whitespace.
+4. The program checks whether any field is empty.
+5. A regular expression checks the basic format of the email address.
+6. An error message is displayed if validation fails.
+7. If validation succeeds, a confirmation message appears and the form is reset.
+
+The `textContent` property updates the feedback message, and CSS classes control the feedback styling.
+
+**Limitation:** The form performs client-side validation only. It does not transmit messages to a server or email address.
+
+## 5. CSS Implementation
+
+### 5.1 Project Layout
+
+CSS Grid arranges the project cards in two columns on larger screens.
+
+A media query changes the layout to a single column on screens narrower than 700 pixels.
+
+### 5.2 Hover Animations
+
+Project cards use CSS `transition` and `transform` properties to create smooth hover effects.
+
+When a visitor hovers over a card, it moves slightly upward and displays a stronger shadow.
+
+### 5.3 User Feedback
+
+The website uses distinct visual styles for validation messages:
+
+- Green feedback indicates successful validation.
+- Red feedback indicates invalid input.
+
+The active filter button is also highlighted to help visitors identify the selected category.
+
+## 6. Error Handling and User Feedback
+
+The website provides feedback for several user interactions.
+
+| Situation | System Response |
+|---|---|
+| Empty contact form | Displays a message requesting all required fields |
+| Invalid email format | Displays an email validation error |
+| Valid form values | Displays a validation confirmation |
+| No matching projects | Displays an empty-state message |
+| Selected project category | Highlights the active filter |
+
+These mechanisms help visitors understand the results of their actions.
+
+## 7. Testing
+
+The following functionality was manually tested during development:
+
+| Test Case | Result |
+|---|---|
+| Display all projects | Passed |
+| Filter Development projects | Passed |
+| Filter Design projects | Passed |
+| Submit an empty contact form | Passed |
+| Submit an invalid email | Passed |
+| Submit valid form values | Passed |
+
+Additional checks before final submission include responsive layout behavior, hover effects, image loading, and compatibility across browsers.
+
+## 8. Design Decisions
+
+The implementation follows several design principles:
+
+- **Simplicity:** Vanilla JavaScript is used without additional frameworks.
+- **Maintainability:** HTML, CSS, and JavaScript are organized into separate files.
+- **Consistency:** Code follows a consistent indentation and naming style.
+- **Usability:** Interactive features provide clear visual feedback.
+- **Responsiveness:** Layouts adjust to different screen sizes.
+- **Accessibility:** Semantic HTML and accessibility attributes support easier navigation and interaction.
+
+## 9. Limitations and Future Improvements
+
+The current website does not include backend functionality or persistent data storage.
+
+Possible future enhancements include a functional contact service, additional project categories, live search, and a dark/light theme preference.
+
+## 10. Conclusion
+
+Assignment 2 improves the original personal portfolio by introducing interactive JavaScript features and enhancing user experience.
+
+The implementation demonstrates DOM manipulation, event handling, basic input validation, CSS transitions, responsive layouts, and user feedback.

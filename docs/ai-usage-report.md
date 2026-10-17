@@ -1,54 +1,117 @@
 # AI Usage Report
 
-## Tools Used & Use Cases
+**SWE 363 – Web Engineering | Assignment 2**
 
-### ChatGPT
+**Student:** Sarah Almanjahi  
+**Project:** Personal Portfolio Website
 
-I used ChatGPT as an AI-assisted development tool during this assignment.
+## 1. AI Tools Used
 
-It was used for:
+The AI tool used during this assignment was **ChatGPT (OpenAI)**.
 
-- Explaining HTML, CSS, and JavaScript concepts.
-- Suggesting a clear structure for the portfolio website.
-- Reviewing and improving HTML content.
-- Suggesting responsive CSS using Flexbox, Grid, and media queries.
-- Helping create a time-based greeting feature using JavaScript.
-- Improving the README structure and documentation.
-- Providing debugging and Git workflow guidance when needed.
+ChatGPT supported the development process by providing code suggestions, explanations, debugging guidance, and documentation assistance.
 
-## Benefits & Challenges
+## 2. How AI Was Used
 
-### Benefits
+### 2.1 Reviewing Assignment 1
 
-Using ChatGPT helped me understand the development process step by step. It made it easier to organize the project, understand unfamiliar code, and improve the structure of the website.
+I used ChatGPT to review my original HTML, CSS, and JavaScript files and identify areas for improvement.
 
-It was also useful for reviewing code and suggesting improvements to the user interface.
+The review focused on:
+- Improving inconsistent code indentation.
+- Organizing the code more clearly.
+- Identifying opportunities to add interactivity.
+- Maintaining the original portfolio design.
 
-### Challenges
+### 2.2 Implementing Interactive Features
 
-One challenge was making sure that I understood the AI-generated suggestions instead of simply copying them.
+ChatGPT suggested JavaScript solutions for project filtering and contact form validation.
 
-Some suggestions also needed to be adjusted to match the requirements of the assignment and the level of concepts covered in the course.
+**Project Filtering:**
 
-## Learning Outcomes
+AI helped explain how to use DOM selection, event listeners, and HTML data attributes to filter projects.
 
-Through this assignment, I improved my understanding of:
+I incorporated this feature into my existing portfolio using the Development and Design categories.
 
-- HTML page structure and semantic elements.
-- CSS Flexbox and Grid.
-- Responsive design using media queries.
-- Basic JavaScript DOM manipulation.
-- Git and GitHub workflow.
-- Organizing a web project into separate HTML, CSS, and JavaScript files.
+**Contact Form Validation:**
 
-I also learned how AI tools can support software development while still requiring the developer to review and understand the generated output.
+AI assisted with input validation logic, including checking empty fields, validating email formats, and displaying feedback messages.
 
-## Responsible Use & Modifications
+The form was implemented as a front-end demonstration without backend communication.
 
-I reviewed the AI-generated suggestions before adding them to my project.
+### 2.3 Improving User Experience
 
-I modified the content and design to match my own portfolio, including my personal information, projects, and preferred visual style.
+ChatGPT suggested CSS improvements such as hover transitions, selected filter button styling, and clear validation feedback.
 
-I also tested the code to make sure it worked correctly and understood the purpose of the code before including it in the final project.
+These suggestions were integrated while preserving the portfolio's original pink color scheme.
 
-AI was used as a learning and development assistant rather than as a replacement for my own understanding and work.
+### 2.4 Documentation
+
+ChatGPT helped organize and improve the project's README, technical documentation, and AI usage report.
+
+The documentation explains the website's features, implementation, setup instructions, and testing process.
+
+## 3. Examples of AI Assistance
+
+| Development Task | AI Assistance | Application |
+|---|---|---|
+| Code quality | Suggested consistent indentation and organization | Improved code formatting |
+| Project filtering | Explained event listeners and category filtering | Implemented interactive project buttons |
+| Form validation | Suggested validation conditions and feedback | Added input checking and messages |
+| CSS animations | Suggested transitions and hover effects | Added interactive project card styling |
+| Documentation | Suggested structure and detailed explanations | Updated project documentation |
+
+## 4. Human Contribution and Adaptation
+
+AI suggestions were incorporated into the existing Assignment 1 portfolio rather than creating an unrelated website.
+
+The development process involved:
+- Retaining the original About Me section and academic projects.
+- Preserving the original color scheme and portfolio identity.
+- Integrating new JavaScript functionality into the existing project structure.
+- Reviewing the suggested implementation and its purpose.
+- Testing project filtering and form validation in the browser.
+- Organizing changes into meaningful Git commits.
+
+AI was used as a development assistant, while project integration, testing, and version control were carried out during the assignment.
+
+## 5. Testing and Verification
+
+After implementing the suggested JavaScript functionality, I manually tested the interactive features.
+
+**Project filtering tests:**
+- All displays both projects.
+- Development displays the JavaFX Game.
+- Design displays the Smart Queue Management System.
+
+**Contact form tests:**
+- Empty fields produce an error message.
+- Invalid email addresses produce an error message.
+- Valid input produces a confirmation message.
+
+These tests helped verify that the added JavaScript functionality behaved as expected.
+
+## 6. What I Learned
+
+Using ChatGPT helped me better understand:
+
+- How JavaScript event listeners respond to user interactions.
+- How DOM manipulation can dynamically update displayed content.
+- How HTML data attributes support project filtering.
+- How client-side form validation provides user feedback.
+- How CSS transitions improve user experience.
+- How consistent formatting and clear documentation improve maintainability.
+
+## 7. Responsible AI Use
+
+AI-generated suggestions were used to support the development and learning process.
+
+The project was based on my existing Assignment 1 work, and AI-assisted features were integrated and tested as part of Assignment 2.
+
+I recognize that AI-generated code requires review and testing and that understanding the implementation is important.
+
+## 8. Conclusion
+
+ChatGPT supported the improvement of my portfolio by assisting with interactive JavaScript features, CSS enhancements, code quality, and documentation.
+
+The assignment demonstrates how AI can support software development while allowing students to practice implementation, testing, and problem-solving skills.
