@@ -44,6 +44,7 @@ main {
     margin: 30px auto;
     padding: 20px;
 }
+
 section {
     margin-bottom: 40px;
 }
@@ -52,24 +53,70 @@ section h2 {
     margin-bottom: 15px;
 }
 
-#projects {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
+#projects-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
 }
 
-#projects h2 {
-    grid-column: 1 / -1;
+/* Project Filter Buttons */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
+.filter-btn {
+  padding: 10px 18px;
+}
+
+.filter-btn[aria-pressed="true"] {
+  background-color: #d98eaa;
+  font-weight: bold;
+}
+
+#projects-list article[hidden] {
+  display: none;
+}
+
+#projects-empty {
+  margin-top: 15px;
+  color: #666;
+}
+
+/* Project Cards */
 article {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    min-width: 0;
-    overflow: hidden;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  min-width: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Form Feedback */
+#form-feedback:not(:empty) {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#form-feedback.success {
+  background-color: #e6f4ea;
+  color: #236b35;
+}
+
+#form-feedback.error {
+  background-color: #fde8e8;
+  color: #a12b2b;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -108,26 +155,29 @@ footer {
     padding: 15px;
 }
 
+/* Responsive Design */
 @media (max-width: 700px) {
-    nav {
-        flex-direction: column;
-        gap: 8px;
-    }
+  nav {
+    flex-direction: column;
+    gap: 8px;
+  }
 
-    #projects {
-        grid-template-columns: 1fr;
-    }
+  #projects-list {
+    grid-template-columns: 1fr;
+  }
 
-    main {
-        margin: 15px auto;
-        padding: 15px;
-    }
+  main {
+    margin: 15px auto;
+    padding: 15px;
+  }
 }
-    .tagline {
+
+.tagline {
     font-weight: bold;
     margin-bottom: 10px;
     }
-    article img {
+    
+article img {
     display: block;
     width: 100%;
     max-width: 100%;
