@@ -39,6 +39,10 @@ nav a:hover {
   text-decoration: underline;
 }
 
+nav a:focus-visible {
+  text-decoration: underline;
+}
+
 /* Main Content */
 main {
   max-width: 1000px;

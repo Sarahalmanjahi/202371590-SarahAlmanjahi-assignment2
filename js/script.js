@@ -14,6 +14,7 @@ if (currentHour < 12) {
 const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll("#projects-list article");
 const emptyMessage = document.getElementById("projects-empty");
+const projectCount = document.getElementById("project-count");
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -36,6 +37,8 @@ filterButtons.forEach((button) => {
         visibleCount++;
       }
     });
+
+    projectCount.textContent = `${visibleCount} project(s) displayed.`;
 
     if (emptyMessage) {
       emptyMessage.hidden = visibleCount > 0;
