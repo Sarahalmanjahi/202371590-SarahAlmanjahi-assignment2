@@ -1,117 +1,51 @@
 # AI Usage Report
 
-**SWE 363 – Web Engineering | Assignment 2**
-
+**Course:** SWE 363 – Web Engineering  
+**Assignment:** Assignment 2 – Interactive Features  
 **Student:** Sarah Almanjahi  
-**Project:** Personal Portfolio Website
+**Student ID:** 202371590
 
-## 1. AI Tools Used
+## 1. AI Usage Log
 
-The AI tool used during this assignment was **ChatGPT (OpenAI)**.
+This report documents the use of ChatGPT during the development of my personal portfolio for Assignment 2.
 
-ChatGPT supported the development process by providing code suggestions, explanations, debugging guidance, and documentation assistance.
+| ID | Tool (model) | Date | Purpose | Files affected | What you changed and how you verified it |
+|---|---|---|---|---|---|
+| C01 | ChatGPT (OpenAI; verify model label) | 2026-10-17 to 2026-10-19 | HTML improvements, CSS styling, JavaScript interactivity, form validation, debugging, code formatting, documentation, accessibility, and project counting | `index.html`, `css/styles.css`, `js/script.js`, `README.md`, `docs/technical-documentation.md`, `docs/ai-usage-report.md` | I integrated ChatGPT suggestions into my existing Assignment 1 portfolio while preserving my original design and project content. I added project filtering, contact form validation, hover animations, accessibility improvements, and a dynamic project counter. I corrected indentation in HTML, CSS, and JavaScript. I manually tested the filtering buttons, form validation, and project counter using Live Server. |
 
-## 2. How AI Was Used
+## 2. AI-Assisted Git Commits
 
-### 2.1 Reviewing Assignment 1
+All the following commits involved assistance from ChatGPT in conversation C01.
 
-I used ChatGPT to review my original HTML, CSS, and JavaScript files and identify areas for improvement.
-
-The review focused on:
-- Improving inconsistent code indentation.
-- Organizing the code more clearly.
-- Identifying opportunities to add interactivity.
-- Maintaining the original portfolio design.
-
-### 2.2 Implementing Interactive Features
-
-ChatGPT suggested JavaScript solutions for project filtering and contact form validation.
-
-**Project Filtering:**
-
-AI helped explain how to use DOM selection, event listeners, and HTML data attributes to filter projects.
-
-I incorporated this feature into my existing portfolio using the Development and Design categories.
-
-**Contact Form Validation:**
-
-AI assisted with input validation logic, including checking empty fields, validating email formats, and displaying feedback messages.
-
-The form was implemented as a front-end demonstration without backend communication.
-
-### 2.3 Improving User Experience
-
-ChatGPT suggested CSS improvements such as hover transitions, selected filter button styling, and clear validation feedback.
-
-These suggestions were integrated while preserving the portfolio's original pink color scheme.
-
-### 2.4 Documentation
-
-ChatGPT helped organize and improve the project's README, technical documentation, and AI usage report.
-
-The documentation explains the website's features, implementation, setup instructions, and testing process.
-
-## 3. Examples of AI Assistance
-
-| Development Task | AI Assistance | Application |
+| Commit ID | Commit Message | AI Assistance |
 |---|---|---|
-| Code quality | Suggested consistent indentation and organization | Improved code formatting |
-| Project filtering | Explained event listeners and category filtering | Implemented interactive project buttons |
-| Form validation | Suggested validation conditions and feedback | Added input checking and messages |
-| CSS animations | Suggested transitions and hover effects | Added interactive project card styling |
-| Documentation | Suggested structure and detailed explanations | Updated project documentation |
+| `4407b04` | Initialize Assignment 2 portfolio with interactive HTML elements | HTML enhancements and interactive elements |
+| `1e01372` | Style project filters and add interactive animations | CSS styling and hover transitions |
+| `d0c9308` | Add interactive project filtering | JavaScript filtering logic |
+| `2b503b7` | Add contact form validation and user feedback | Input validation and feedback messages |
+| `e474be0` | Improve README and add Assignment 2 documentation | Documentation drafting and organization |
+| `fc43b03` | Fix HTML indentation | HTML formatting improvements |
+| `8442460` | Improve CSS formatting and accessibility | CSS organization and accessibility |
+| `a95bafe` | Improve JavaScript formatting and code quality | JavaScript code review and formatting |
+| `f8bf70f` | Improve portfolio accessibility and project filtering | SEO, keyboard accessibility, and dynamic project counter |
 
-## 4. Human Contribution and Adaptation
+These commits were created before the updated AI attribution instructions were communicated. They are explicitly documented here to provide transparency about AI assistance.
 
-AI suggestions were incorporated into the existing Assignment 1 portfolio rather than creating an unrelated website.
+## 3. AI Usage Evidence
 
-The development process involved:
-- Retaining the original About Me section and academic projects.
-- Preserving the original color scheme and portfolio identity.
-- Integrating new JavaScript functionality into the existing project structure.
-- Reviewing the suggested implementation and its purpose.
-- Testing project filtering and form validation in the browser.
-- Organizing changes into meaningful Git commits.
+**Conversation ID:** C01  
+**Tool:** ChatGPT (OpenAI)  
+**Topic:** Assignment 2 – Personal Portfolio Development
 
-AI was used as a development assistant, while project integration, testing, and version control were carried out during the assignment.
+The complete, unedited conversation will be included in the separate AI Evidence ZIP submitted through Blackboard.
 
-## 5. Testing and Verification
+The evidence will also include available intermediate AI-generated artifacts and the final project files.
 
-After implementing the suggested JavaScript functionality, I manually tested the interactive features.
+## 4. Signed Declaration
 
-**Project filtering tests:**
-- All displays both projects.
-- Development displays the JavaFX Game.
-- Design displays the Smart Queue Management System.
+I declare that this report and the attached evidence document all of my AI use in this assignment, with complete and unedited conversations, and that I understand and can explain all the code I submitted. I understand that undeclared AI use or a false declaration will be treated as plagiarism according to KFUPM regulations.
 
-**Contact form tests:**
-- Empty fields produce an error message.
-- Invalid email addresses produce an error message.
-- Valid input produces a confirmation message.
-
-These tests helped verify that the added JavaScript functionality behaved as expected.
-
-## 6. What I Learned
-
-Using ChatGPT helped me better understand:
-
-- How JavaScript event listeners respond to user interactions.
-- How DOM manipulation can dynamically update displayed content.
-- How HTML data attributes support project filtering.
-- How client-side form validation provides user feedback.
-- How CSS transitions improve user experience.
-- How consistent formatting and clear documentation improve maintainability.
-
-## 7. Responsible AI Use
-
-AI-generated suggestions were used to support the development and learning process.
-
-The project was based on my existing Assignment 1 work, and AI-assisted features were integrated and tested as part of Assignment 2.
-
-I recognize that AI-generated code requires review and testing and that understanding the implementation is important.
-
-## 8. Conclusion
-
-ChatGPT supported the improvement of my portfolio by assisting with interactive JavaScript features, CSS enhancements, code quality, and documentation.
-
-The assignment demonstrates how AI can support software development while allowing students to practice implementation, testing, and problem-solving skills.
+**Full Name:** Sarah Almanjahi  
+**Student ID:** 202371590  
+**Date:** 2026-10-19  
+**Signature:** Sarah
